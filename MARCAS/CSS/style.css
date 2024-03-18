@@ -19,6 +19,7 @@ body {
     width: 50vw;
         height: 50vh;
         overflow: auto;
+        margin-top: 40px;
 }
 
 h1 {
@@ -49,4 +50,51 @@ h1 {
 
 .button:hover {
     background-color: #666;
+}
+
+
+/* Estilos generales de la barra de navegación */
+nav {
+    position: fixed; /* Fija la barra de navegación en la parte superior de la ventana */
+    width: 100%; /* Hace que la barra de navegación ocupe todo el ancho de la ventana */
+    background-color:#58eca7 ;/* Color de fondo */
+    padding: 10px 0; /* Añade espacio alrededor de los elementos de la barra de navegación */
+    top: 0
+}
+
+/* Estilos de la lista desordenada (ul) */
+ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centra los elementos de la lista */
+}
+
+/* Estilos de los elementos de lista (li) */
+li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin: 0 10px; /* Añade espacio entre los elementos de la lista */
+    border-right: 1px solid white; /* Agrega un borde derecho blanco a cada elemento */
+    padding: 0 10px; /* Añade espacio alrededor de los elementos de la lista */
+}
+
+/* Estilo para el último elemento de la lista */
+li:last-child {
+    border-right: none; /* Elimina el borde derecho del último elemento */
+
+}
+
+
+/* Estilos de los enlaces (a) */
+li a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    padding: 10px 20px; /* Añade espacio alrededor del texto del enlace */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+/* Estilos de los enlaces cuando el mouse está encima */
+li a:hover {
+    background-color: #45a049; /* Color de fondo cuando el mouse está encima */
 }
